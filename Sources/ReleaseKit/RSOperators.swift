@@ -5,7 +5,7 @@
 //  Created by Александр Сенин on 17.10.2020.
 //
 
-//MARK: - RZViewBuilderKit
+//MARK: - RSViewBuilderKit
 precedencegroup SecondTernaryPrecedence {
     associativity: right
 }
@@ -24,5 +24,5 @@ infix operator ><
 infix operator ?> : SecondTernaryPrecedence
 infix operator <| : FirstTernaryPrecedence
 
-//MARK: - RZDarkModeKit
+//MARK: - RSDarkModeKit
 infix operator <-
