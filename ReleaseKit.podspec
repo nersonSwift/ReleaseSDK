@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
  
   spec.source       = { 
 	:git => "https://github.com/nersonSwift/ReleaseSDK.git", 
-	:tag => spec.name.to_s + "_v" + spec.version.to_s
+	:tag => "ReleaseKit_v1.0"
   }
 
   
@@ -28,8 +28,8 @@ Pod::Spec.new do |spec|
   spec.default_subspec = 'CoreOnly'
   
   spec.subspec 'CoreOnly' do |ss|
-    ss.source_files = 'Sources/ReleaseKit/**/*'
-    ss.exclude_files = 'Sources/ReleaseKit/**/*.plist'
+    ss.source_files = 'Sources/ReleaseKit/*'
+    ss.exclude_files = 'Sources/ReleaseKit/*.plist'
     
   end
 end
